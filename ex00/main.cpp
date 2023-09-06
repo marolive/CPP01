@@ -14,10 +14,19 @@
 
 int main(void)
 {
-    std::string num;
+    Zombie zum("haha");
+    Zombie *nzum;
 
-    std::cin >> num;
-    if (num == "1")
+    std::cout << "New: " << zum.getZombieName() << std::endl;
+    zum.announce();
+    std::cout << "------------------------------------------" << std::endl;
+    std::cout << "Next: " << std::endl;
+    nzum = newZombie("hehe");
+    std::cout << "Next: " << nzum->getZombieName() << std::endl;
+    zum.announce();
+    std::cout << "------------------------------------------" << std::endl;
+    randomChump("huhu");
 
+    delete nzum;
     return 0;
 }
