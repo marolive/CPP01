@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marolive <marolive@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 17:59:26 by marolive          #+#    #+#             */
-/*   Updated: 2023/09/02 19:02:41 by marolive         ###   ########.fr       */
+/*   Updated: 2023/09/07 12:03:51 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@ Zombie::Zombie()
 {
     std::cout << "Fool Zombie Spawned!" << std::endl << std::endl;
     return;
+}
+
+Zombie::Zombie(std::string name)
+{
+    this->_name = name;
+    std::cout << "Fool Zombie Spawned!" << std::endl << std::endl;
 }
 
 Zombie::~Zombie()

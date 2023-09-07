@@ -14,13 +14,13 @@
 
 int main(void)
 {
-    Zombie *nzum;
+    Zombie *zombie;
 
     randomChump("Pietra");
     std::cout << "------------------------------" << std::endl;
-    nzum = newZombie("Josh");
-    nzum->announce();
-    delete nzum;
+    zombie = newZombie("Josh");
+    zombie->announce();
+    delete zombie;
     std::cout << "------------------------------" << std::endl;
 
     return 0;

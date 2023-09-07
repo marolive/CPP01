@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marolive <marolive@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 18:51:32 by marolive          #+#    #+#             */
-/*   Updated: 2023/09/02 18:51:55 by marolive         ###   ########.fr       */
+/*   Updated: 2023/09/07 12:07:58 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,4 @@ void randomChump(std::string name)
     Zombie zombie;
     zombie.setZombieName(name);
     zombie.announce();
-
 }
