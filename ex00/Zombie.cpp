@@ -12,14 +12,15 @@
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(std::string name)
+Zombie::Zombie()
 {
+    std::cout << "Fool Zombie Spawned!" << std::endl << std::endl;
     return;
 }
 
 Zombie::~Zombie()
 {
-    std::cout << this->_name << "Dead!" << std::endl;
+    std::cout << this->_name << " Dead!" << std::endl;
     return;
 }
 

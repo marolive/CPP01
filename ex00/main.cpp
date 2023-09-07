@@ -14,19 +14,14 @@
 
 int main(void)
 {
-    Zombie zum("haha");
     Zombie *nzum;
 
-    std::cout << "New: " << zum.getZombieName() << std::endl;
-    zum.announce();
-    std::cout << "------------------------------------------" << std::endl;
-    std::cout << "Next: " << std::endl;
-    nzum = newZombie("hehe");
-    std::cout << "Next: " << nzum->getZombieName() << std::endl;
-    zum.announce();
-    std::cout << "------------------------------------------" << std::endl;
-    randomChump("huhu");
-
+    randomChump("Pietra");
+    std::cout << "------------------------------" << std::endl;
+    nzum = newZombie("Josh");
+    nzum->announce();
     delete nzum;
+    std::cout << "------------------------------" << std::endl;
+
     return 0;
 }
